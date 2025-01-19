@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio3</title>
+    <style>
+        html {
+            height: 100vh; /*O documento HTML ocupa 100% da tela (sem rolagem lateral e vertical)*/
+            background: linear-gradient(rgb(31, 78, 47), rgb(110, 17, 231));
+            color: white;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Meu primeiro código</p>
+
+    <p><a href="ex002.html">Voltar para a página antiga.</a></p>
+    <p><a href="ex004.html">Ir para a próxima página</a></p>
+
+
+    <script>
+        var n1 = Number(prompt("Digite um número: ")); //Converter string para números
+        var n2 = Number(prompt("Digite outro número: ")); //Converter string para números
+        var s = n1+n2;
+        alert(`A soma dos valores digitados é ${s}`);
+        // "string(s)" para converter para string
+
+    </script>
+
+    
+    <!--Formatando Strings-->
+    <!--
+    var s = 'JavaScript'
+    s.length  // quantos caracteres a string tem
+    s.toUpperCase() // tudo para "MAIÚSCULAS"
+    s.toLowerCase() // tudo para 'minúsculas'
+    -->
+
+    <!--Formatando números-->
+    <!--
+    var n1 = 1545.5
+    n1.toFixed(2) // para duas casas decimais
+    n1.toFixed(2).replace('.', ',') // para trocar o ponto'.' por virgula ','
+
+    n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) // para converter em valor monetario em real
+    
+    n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})  // para converter em valor monetario em Dolar
+    -->
+</body>
+
+
+</html>
+
