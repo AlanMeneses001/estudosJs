@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Qual seu País?</h1>
+        <p>Descubra se você é estrangeiro ou nativo!</p>
+    </header>
+    <main>
+        Onde você nasceu ?: <input type="text" name="pais" id="nacao">
+        <input type="button" value="Verificar" onclick="verificar()">
+        <div id="res">
+        </div>
+    </main>
+
+    <script>
+        function verificar() {
+            let pais = document.getElementById('nacao').value; // Obtém o valor do input
+            let res = document.getElementById('res');
+            if (pais.toLowerCase() === 'brasil') { // Converte para minúsculo para evitar problemas de caixa alta/baixa
+                res.innerHTML = `Você nasceu no <strong>Brasil</strong>, você é Brasileiro!`;
+            } else {
+                res.innerHTML = `<p>Você nasceu em ${pais}, você é estrangeiro!</p>`;
+            }
+        }
+    </script>
+</body>
+
+
+</html>
